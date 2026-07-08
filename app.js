@@ -5,7 +5,11 @@ const app = express();
 const PORT = 3000;
 
 app.get('/', (req, res) => {
-    res.send('<h1>Welcome to DEV Environment</h1>');
+    res.send(`
+        <h1>🚀 Development Environment</h1>
+        <h2>Server: DEV</h2>
+        <p>Branch: dev</p>
+`);
 });
 
 app.listen(PORT, () => {
